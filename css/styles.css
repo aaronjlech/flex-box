@@ -378,9 +378,13 @@ img {
   text-shadow: 4px 4px rgba(0, 0, 0, 0.1);
   padding: 10px; }
 #app-container .container {
-  display: flex; }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100vh; }
 #app-container .box-1 {
-  background: #1abc9c; }
+  background: #1abc9c;
+  width: 20%; }
 #app-container .box-2 {
   background: #2980b9; }
 #app-container .box-3 {
@@ -394,6 +398,7 @@ img {
 #app-container .box-7 {
   background: #f1c40f; }
 #app-container .box-8 {
+  width: 16%;
   background: #c0392b; }
 #app-container .box-9 {
   background: #7f8c8d; }
