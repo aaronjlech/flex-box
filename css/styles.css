@@ -377,6 +377,8 @@ img {
   text-align: center;
   text-shadow: 4px 4px rgba(0, 0, 0, 0.1);
   padding: 10px; }
+#app-container .container {
+  display: flex; }
 #app-container .box-1 {
   background: #1abc9c; }
 #app-container .box-2 {
