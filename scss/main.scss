@@ -1,59 +1,73 @@
-@import "./imports/_normalize.scss";
+// @import "./imports/_normalize.scss";
 
 *{ box-sizing: border-box }
 img {
    width: 100%;
    display: block;
 }
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to right, rgba(84,221,255,1) 0%, rgba(56,92,201,1) 100%);
+}
 
-
-
-#app-container{
-    .box{
-        color: white;
-        font-size: 100px;
-        text-align: center;
-        text-shadow: 4px 4px rgba(0, 0, 0, 0.1);
-        padding: 10px;
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+}
+a{
+    color: #FFF;
+    letter-spacing: 2px;
+    font-weight: 100;
+    text-decoration: none;
+    padding: 20px 5px;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all .5s;
+    display: inline-block;
+    width: 100%;
+    &:hover{
+        background: rgba(0, 0, 0 , 0.3);
     }
-    .container{
+}
+
+.flex-nav{
+    ul{
+        border: 1px solid #000;
+        list-style: none;
+        margin: 0;
+        padding: 0;
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        height: 100vh;
-    }
-    .box-1{
-        background: #1abc9c;
-        width: 20%;
-    }
-    .box-2{
-        background: #2980b9;  
+        @media all and (max-width: 1000px){
+            flex-wrap: flex;
+        }
 
     }
-    .box-3{
-        background: #ecf0f1;
+    li{
+        flex: 3;
+        @media all and (max-width: 1000px){
+            flex: 1 1 50%;
+            color: blue;
+        }   
     }
-    .box-4{
-        background:  #e74c3c;
+        .social{
+        flex: 1;
     }
-    .box-5{
-        background: #34495e;
-    }
-    .box-6{
-        background: #9b59b6;
-    }
-    .box-7{
-        background: #f1c40f;
-    }
-    .box-8{
-        width: 16%;
-        background: #c0392b;
-    }
-    .box-9{
-        background: #7f8c8d;
-    }
-    .box-10{
-        background: #2980b9;
-    }
+    
 
-}   
+
+
+
+
+}
+
+@media all and (max-width: 1000px){
+    ul{
+        color: blue;
+    }
+}
+
+@media all and (max-width: 500px){
+    
+}
