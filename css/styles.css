@@ -10,10 +10,44 @@ body {
   font-family: sans-serif;
   background: linear-gradient(to right, #54ddff 0%, #385cc9 100%); }
 
+.header {
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2); }
+  .header h1 {
+    font-size: 2em;
+    font-weight: lighter;
+    padding: 10px;
+    letter-spacing: 14px; }
+
+.img-box {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 0 0 20px 0; }
+
+.content {
+  padding: 20px;
+  color: #fff;
+  font-weight: 100;
+  margin-bottom: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2); }
+
+.footer {
+  margin-bottom: 10px; }
+
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
   padding: 50px; }
+  @media screen and (max-width: 500px) {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0; }
+      .wrapper > * {
+        order: 9999; } }
 
 a {
   color: #FFF;
@@ -29,26 +63,43 @@ a {
   a:hover {
     background: rgba(0, 0, 0, 0.3); }
 
-.flex-nav ul {
-  border: 1px solid #000;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex; }
-  @media all and (max-width: 1000px) {
-    .flex-nav ul {
-      flex-wrap: flex; } }
-.flex-nav li {
-  flex: 3; }
-  @media all and (max-width: 1000px) {
-    .flex-nav li {
-      flex: 1 1 50%;
-      color: blue; } }
-.flex-nav .social {
-  flex: 1; }
-
-@media all and (max-width: 1000px) {
-  ul {
-    color: blue; } }
+.flex-nav {
+  margin: 20px 0; }
+  @media screen and (max-width: 500px) {
+    .flex-nav {
+      order: 1; } }
+  .flex-nav .mobile-menu {
+    display: none; }
+    @media screen and (max-width: 500px) {
+      .flex-nav .mobile-menu {
+        display: block; } }
+  .flex-nav ul {
+    border: 1px solid #000;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; }
+    @media screen and (max-width: 1000px) {
+      .flex-nav ul {
+        flex-wrap: wrap; } }
+    @media screen and (max-width: 500px) {
+      .flex-nav ul {
+        display: none; } }
+  .flex-nav li {
+    flex: 3; }
+    @media screen and (max-width: 1000px) {
+      .flex-nav li {
+        flex: 1 1 50%; } }
+    @media screen and (max-width: 500px) {
+      .flex-nav li {
+        flex-basis: 100%; } }
+  .flex-nav .social {
+    flex: 1; }
+    @media screen and (max-width: 1000px) {
+      .flex-nav .social {
+        flex: 1 1 25%; } }
+  .flex-nav .open {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+    display: flex; }
 
 /*# sourceMappingURL=styles.css.map */
