@@ -1,0 +1,23 @@
+
+
+.slider{
+
+    .slider-nav{
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li{
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 15px;
+                    background: $InvisBlack;
+                    &:hover{
+                        background: rgba(0, 0, 0, .4)
+                    }
+                }
+            }
+        }
+    }
+}

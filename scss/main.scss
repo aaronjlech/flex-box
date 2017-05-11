@@ -1,6 +1,11 @@
 // @import "./imports/_normalize.scss";
 $InvisBlack: rgba(0, 0, 0, 0.2);
 
+
+@import "./_slider.scss";
+
+
+
 *{ box-sizing: border-box }
 img {
    width: 100%;
@@ -119,12 +124,8 @@ a{
     }
     
     .open{
-                transition: cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
-
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
         display: flex;
     }
-
-
-
 
 }
