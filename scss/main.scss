@@ -108,6 +108,7 @@ a{
 
     li{
         flex: 3;
+        display: flex;
         @media screen and (max-width: 1000px){
             flex: 1 1 50%;
 
